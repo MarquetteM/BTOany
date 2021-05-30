@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Boite à Outils Annecy</string>
+    <string name="titre">Boite à Outils</string>
+    <string name="bt_page_saisie">Page saisie</string>
+    <string name="defaut_texte_saisi">Pas de saisie</string>
+    <string name="valider">Valider</string>
+    <string name="annuler">Annuler</string>
+    <string name="consigneSaisie">Veuillez saisir un texte</string>
+    <string name="titreSaisie">Page de saisie</string>
+</resources>

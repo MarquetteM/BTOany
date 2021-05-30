@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaisieActivity">
+
+    <TextView
+        android:id="@+id/titreSaisi"
+        android:text="@string/titreSaisie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textSaisiePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/textSaisiePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/consigneSaisie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btvalider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/btvalider"
+        android:text="@string/valider"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="validation"
+        app:layout_constraintTop_toBottomOf="@id/textSaisiePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btannuler"
+        />
+    <Button
+        android:id="@+id/btannuler"
+        android:text="@string/annuler"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="retour"
+        app:layout_constraintTop_toBottomOf="@id/textSaisiePage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btvalider"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
