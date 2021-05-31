@@ -5,6 +5,11 @@
     <string name="defaut_texte_saisi">Pas de saisie</string>
     <string name="valider">Valider</string>
     <string name="annuler">Annuler</string>
+    <string name="retour">Retour</string>
     <string name="consigneSaisie">Veuillez saisir un texte</string>
     <string name="titreSaisie">Page de saisie</string>
+    <string name="titreDateHeure">Saisie date et Heure</string>
+    <string name="date">Date</string>
+    <string name="heure">Heure</string>
+    <string name="saisieDateHeure">Saisie date et heure</string>
 </resources>

@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         Log.i("BTO","après création intentSaisi");
         startActivity(intentSaisi);
     }
+
+    public void saisieDateHeure(View view) {
+        intent = new Intent(MainActivity.this, SaisieDate.class);
+        startActivity(intent);
+    }
 }

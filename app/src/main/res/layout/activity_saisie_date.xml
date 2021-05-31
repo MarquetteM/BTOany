@@ -6,9 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".SaisieDate">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/textDate"
+    <EditText
+        android:id="@+id/titre"
+        android:text="@string/titreSaisie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/date"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideVert1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        />
+    <EditText
+        android:id="@+id/date"
+        android:text="@string/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideVert1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/heure"
+        />
+    <EditText
+        android:id="@+id/heure"
+        android:text="@string/heure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideVert1"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideVert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="200dp"
+        />
+    <EditText
+        android:id="@+id/dateSaisie"
+        android:text="Saisir la date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideVert2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/heureSaisie"
+        />
+    <EditText
+        android:id="@+id/heureSaisie"
+        android:text="saisir l'heure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dateSaisie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideVert2"
+        />
+    <Button
+        android:id="@+id/btnRetour"
+        android:text="@string/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heureSaisie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
